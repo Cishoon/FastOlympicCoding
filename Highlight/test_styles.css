@@ -8,37 +8,58 @@ a {
 }
 
 .panel {
-	background-color: color(var(--foreground) alpha(0.25));	
+	background-color: color(var(--foreground) alpha(0.25));
 	padding: 0px;
 	margin: 0px;
 }
 
+/* .test {
+	color: color(var(--foreground));
+	text-decoration: none;
+	background-color: color(var(--foreground) alpha(0.3));
+	padding: 1px;
+} */
 .test {
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--foreground) alpha(0.3));
 	padding: 1px;
 }
 
-.test-accept {
+/* .test-accept {
 	background-color: color(var(--greenish) alpha(0.2));
 }
 
 .test-decline {
 	background-color: color(var(--redish) alpha(0.3));
+} */
+.test-accept {
+	background-color: color(rgb(100, 169, 30));
 }
+
+.test-decline {
+	background-color: color(rgb(225, 0, 0));
+}
+
+.test .accept {
+	background-color: color(rgb(100, 169, 30));
+}
+
+.test .decline {
+	background-color: color(rgb(225, 0, 0));
+}
+
 
 .sep {
 	text-decoration: none;
 }
 
 .config {
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--foreground) alpha(0.3));
 	padding: 1px;
 }
-
 
 .config-run {
 	background-color: var(--action-color);
@@ -54,8 +75,7 @@ a {
 
 .config-next {
 	padding: 1px;
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--foreground) alpha(0.5));
 }
-

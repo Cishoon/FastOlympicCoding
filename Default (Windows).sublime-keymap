@@ -54,6 +54,26 @@
 			}
 		]
 	},
+	{
+		"keys": ["keypad_enter"],
+		"command": "test_manager",
+		"args": {
+			"action": "insert_line"
+		},
+		"context": [
+			{
+				"operand": "source.TestSyntax",
+				"operator": "equal",
+				"match_all": true,
+				"key": "selector"
+			},
+			{
+				"key": "setting.edit_mode",
+				"operator": "equal",
+				"operand": false
+			}
+		]
+	},
 
 	// New test
 	{
@@ -76,10 +96,30 @@
 			}
 		]
 	},
+	{
+		"keys": ["ctrl+keypad_enter"],
+		"command": "test_manager",
+		"args": {
+			"action": "new_test"
+		},
+		"context": [
+			{
+				"operand": "source.TestSyntax",
+				"operator": "equal",
+				"match_all": true,
+				"key": "selector"
+			},
+			{
+				"key": "setting.edit_mode",
+				"operator": "equal",
+				"operand": false
+			}
+		]
+	},
 
 	// Toggle new test
 	{
-		"keys": ["ctrl+enter"],
+		"keys": ["ctrl+shift+enter"],
 		"command": "test_manager",
 		"args": {
 			"action": "toggle_new_test"
@@ -98,6 +138,27 @@
 			}
 		]
 	},
+	{
+		"keys": ["ctrl+shift+keypad_enter"],
+		"command": "test_manager",
+		"args": {
+			"action": "toggle_new_test"
+		},
+		"context": [
+			{
+				"operand": "source.TestSyntax",
+				"operator": "equal",
+				"match_all": true,
+				"key": "selector"
+			},
+			{
+				"key": "setting.edit_mode",
+				"operator": "equal",
+				"operand": true 
+			}
+		]
+	},
+
 
 	// Paste
 	{
@@ -145,7 +206,7 @@
 
 	// Terminate Process
 	{
-		"keys": ["ctrl+x"],
+		"keys": ["ctrl+c"],
 		"command": "test_manager",
 		"args": {
 			"action": "kill_proc"

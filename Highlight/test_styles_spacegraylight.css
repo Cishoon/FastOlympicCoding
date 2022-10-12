@@ -14,18 +14,18 @@ a {
 }
 
 .test {
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--foreground) alpha(0.1));
 	padding: 1px;
 }
 
 .test-accept {
-	background-color: color(rgb(192, 208, 176) alpha(1));
+	background-color: color(rgb(100, 169, 30) alpha(0.1));
 }
 
 .test-decline {
-	background-color: color(var(--redish) alpha(0.3));
+	background-color: color(rgb(225, 0, 0) alpha(0.1));
 }
 
 .sep {
@@ -33,7 +33,7 @@ a {
 }
 
 .config {
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--bluish) alpha(0.1));
 	padding: 1px;
@@ -53,8 +53,7 @@ a {
 
 .config-next {
 	padding: 1px;
-	color: color(var(--foreground));	
+	color: color(var(--foreground));
 	text-decoration: none;
 	background-color: color(var(--action-color) alpha(0.2));
 }
-
